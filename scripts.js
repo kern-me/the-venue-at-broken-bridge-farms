@@ -12,7 +12,6 @@ function animateShapes() {
         rect.classList.add('fade-in-on-scroll');
     });
 
-    // Helper to determine if an element is visible in the viewport
     function isElementInViewport(el) {
         var rect = el.getBoundingClientRect();
         return (
@@ -36,7 +35,6 @@ function animateShapes() {
         });
     }
 
-    // Initial check
     handleScrollFadeIn();
 
     window.addEventListener('scroll', handleScrollFadeIn);
