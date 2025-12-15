@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "Metropola";
-  src: url("https://static1.squarespace.com/static/68dc37ccd4509f0465be841e/t/68e6aa14ec472715534be5c7/1759947284638/Metropola-Regular.woff2");
-  font-weight: bold;
-  font-style: normal;
+    font-family: 'Metropola';
+    src: url('https://static1.squarespace.com/static/68dc37ccd4509f0465be841e/t/68e6aa14ec472715534be5c7/1759947284638/Metropola-Regular.woff2');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
   font-family: "Montecatini Pro Ampio";
-  src: url("https://static1.squarespace.com/static/68dc37ccd4509f0465be841e/t/68ed3151a8eb8a69c60350ef/1760375121960/MontecatiniPro-AmpioSemibold.woff2");
+  src: url('https://static1.squarespace.com/static/68dc37ccd4509f0465be841e/t/68ed3151a8eb8a69c60350ef/1760375121960/MontecatiniPro-AmpioSemibold.woff2');
   font-weight: 600;
   font-style: normal;
 }
@@ -23,20 +23,19 @@
   background-image: none !important;
 }
 
+/* Mobile Menu Button */
+#header > div.header-menu.header-menu--folder-list > div.header-menu-nav > nav > div.header-menu-nav-folder.header-menu-nav-folder--active > div.header-menu-cta > a {
+  border: 2px solid white;
+}
+
 /* Child menu container */
 
-body:not(.header--menu-open)
-  .header-nav-item
-  .header-nav-folder-item--active
-  .header-nav-folder-item-content {
+body:not(.header--menu-open) .header-nav-item .header-nav-folder-item--active .header-nav-folder-item-content {
   background-image: none !important;
   font-weight: bold;
 }
 
-.header-nav
-  .header-nav-item--folder
-  .header-nav-folder-content
-  .header-nav-folder-item {
+.header-nav .header-nav-item--folder .header-nav-folder-content .header-nav-folder-item {
   line-height: 2.2;
 }
 
@@ -47,55 +46,51 @@ body:not(.header--menu-open)
 
 /* Custom Scroll Animations */
 .fade-in-on-scroll {
-  opacity: 0;
-  transition: opacity 2s cubic-bezier(0.31, 0.72, 0.62, 1.01);
+    opacity: 0;
+    transition: opacity 2s cubic-bezier(.31, .72, .62, 1.01);
 }
 .fade-in-on-scroll.fade-in-visible {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* Headings */
-h1,
-.hero-heading {
+h1, .hero-heading {
   font-family: "Montecatini Pro Ampio", serif !important;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase !important;
   text-align: center;
-  color: #3f453b;
+  color: #3F453B;
   white-space: pre-wrap;
   font-size: clamp(3rem, 5vw, 4rem);
   line-height: 1.15;
   letter-spacing: 0.5px;
 }
 
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Metropola" !important;
+h2, h3, h4, h5 {
+  font-family: 'Metropola' !important;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 /* Testimonials */
 .list-section-title {
-  font-family: "Metropola" !important;
+  font-family: 'Metropola' !important;
   font-weight: 500 !important;
   text-transform: uppercase !important;
 }
 
 /* Carousels */
 .dark .user-items-list-carousel__slide {
-  border-radius: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 h2.list-item-content__title {
-  font-family: "Jost", sans-serif !important;
+  font-family: 'Jost', sans-serif !important;
   text-transform: none;
   text-align: left !important;
   margin-left: 0;
-  color: #1a1919 !important;
+  color: #1A1919 !important;
   font-weight: normal !important;
   line-height: 1.6 !important;
   font-size: 1rem !important;
@@ -103,38 +98,35 @@ h2.list-item-content__title {
 
 .dark .list-item-content__description {
   text-align: left !important;
-  color: #1a1919 !important;
+  color: #1A1919 !important;
   font-weight: bold;
   padding-top: 1rem;
 }
 
 .dark .user-items-list-carousel__slide:before {
-  content: "";
-  width: 3rem;
-  height: 3rem;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg width='67' height='47' viewBox='0 0 67 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1 46.4001C7.29995 46.4001 0.699951 39.6001 0.699951 30.2001C0.699951 16.8001 17.1 3.80009 24.1 1.2001C26.7 0.200101 28.7 2.4001 26.5 4.0001C22.9 6.20009 17.3 11.2001 14.7 17.6001C23.5 17.0001 30.5 23.8001 30.5 32.2001C30.5 40.0001 24.3 46.4001 16.1 46.4001ZM36.9 30.2001C36.9 16.8001 53.2999 3.80009 60.3 1.2001C62.8999 0.200101 64.9 2.4001 62.7 4.0001C59.1 6.20009 53.5 11.2001 50.9 17.6001C59.7 17.0001 66.7 23.8001 66.7 32.2001C66.7 40.0001 60.5 46.4001 52.2999 46.4001C43.4999 46.4001 36.9 39.6001 36.9 30.2001Z' fill='%2387A0AA'/%3E%3C/svg%3E%0A");
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='67' height='47' viewBox='0 0 67 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1 46.4001C7.29995 46.4001 0.699951 39.6001 0.699951 30.2001C0.699951 16.8001 17.1 3.80009 24.1 1.2001C26.7 0.200101 28.7 2.4001 26.5 4.0001C22.9 6.20009 17.3 11.2001 14.7 17.6001C23.5 17.0001 30.5 23.8001 30.5 32.2001C30.5 40.0001 24.3 46.4001 16.1 46.4001ZM36.9 30.2001C36.9 16.8001 53.2999 3.80009 60.3 1.2001C62.8999 0.200101 64.9 2.4001 62.7 4.0001C59.1 6.20009 53.5 11.2001 50.9 17.6001C59.7 17.0001 66.7 23.8001 66.7 32.2001C66.7 40.0001 60.5 46.4001 52.2999 46.4001C43.4999 46.4001 36.9 39.6001 36.9 30.2001Z' fill='%2387A0AA'/%3E%3C/svg%3E%0A");
 }
 
 .dark .user-items-list-carousel .list-item[data-is-card-enabled="true"] {
-  background-color: #f2f3f1 !important;
+  background-color: #F2F3F1 !important;
 }
 
 @media screen and (min-width: 576px) {
-  .user-items-list-carousel[data-show-adjacent-slides="true"]
-    .user-items-list-carousel__slides,
-  .user-items-list-carousel[data-show-adjacent-slides="true"]
-    .user-items-list-carousel__arrow-wrapper--left {
-    padding-right: 0;
-  }
+    .user-items-list-carousel[data-show-adjacent-slides="true"] .user-items-list-carousel__slides, .user-items-list-carousel[data-show-adjacent-slides="true"] .user-items-list-carousel__arrow-wrapper--left {
+        padding-right: 0;
+    }
 }
 
 /* Gather With Us - Link styles */
 #block-yui_3_17_2_1_1760447398661_4544 > div > div > p > a,
 #block-0253d980a04a3e80e718 > div > div > p > a,
 #block-6d66465398bcac781400 > div > div > p > a,
-#block-290d211e94267708ee8d > div > div > p > a {
+#block-290d211e94267708ee8d > div > div > p > a{
   text-decoration: none !important;
 }
 
@@ -142,20 +134,20 @@ h2.list-item-content__title {
 .sqs-button-element--tertiary {
   display: flex !important;
 }
-
+  
 .sqs-button-element--tertiary:hover {
   background-color: transparent !important;
   color: inherit !important;
 }
-
+  
 .sqs-button-element--tertiary:hover:after {
   translate: 10px;
 }
-
+  
 .sqs-button-element--tertiary:after {
   transition: translate 0.25s ease;
   translate: 0px;
-  content: "";
+  content: '';
   height: 1.5rem;
   width: 1.5rem;
   margin-left: 1.5rem;
@@ -169,7 +161,6 @@ h2.list-item-content__title {
   background-color: transparent;
 }
 
-/* text wrap */
 .text-wrap--desktop {
   white-space: nowrap;
 }
@@ -191,7 +182,6 @@ h2.list-item-content__title {
 }
 
 /* FOOTER */
-/* Footer CTA */
 #block-bed5d558e11c67ca18bb h2 {
   font-family: "Montecatini Pro Ampio", serif !important;
   letter-spacing: 0.5px;
@@ -201,13 +191,14 @@ h2.list-item-content__title {
   line-height: 2;
 }
 
-.socialaccountlinks-v2-block
-  .social-icons-style-regular
-  .sqs-svg-icon--wrapper
-  > div,
-.social-account-links-v2-block
-  .social-icons-style-regular
-  .sqs-svg-icon--wrapper
-  > div {
+.socialaccountlinks-v2-block .social-icons-style-regular .sqs-svg-icon--wrapper>div, .social-account-links-v2-block .social-icons-style-regular .sqs-svg-icon--wrapper>div {
   transform: scale(1);
+}
+
+.accordion-item__description {
+  max-width: calc(100% - 4rem) !important;
+}
+
+.accordion-item__title {
+  line-height: 1.4;
 }
